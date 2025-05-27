@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    gap: 15px; /* For spacing between flex children */
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px; /* If not using gap */
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+}
+
+.item-details p {
+    margin: 0 0 10px 0;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls .btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+}
+
+.quantity {
+    margin: 0 10px;
+    font-weight: bold;
+    min-width: 20px; /* Ensure space for two digits */
+    text-align: center;
+}
+
+.item-actions {
+    display: flex;
+    flex-direction: column; /* Stack like and delete buttons */
+    align-items: center; /* Center buttons in the column */
+    gap: 5px; /* Space between like and delete */
+    margin-left: 10px; /* Space from item details */
+}
+
+.item-total-price {
+    min-width: 100px; /* Ensure consistent width */
+    text-align: right;
+    font-weight: bold;
+    margin-left: auto; /* Push to the right */
+}
+
+.btn {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.plus-btn, .minus-btn {
+    background-color: #e9e9e9;
+}
+
+.delete-btn {
+    background-color: #ffdddd;
+    color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.delete-btn:hover {
+    background-color: #fcc;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    color: #aaa; /* Default heart color */
+    font-size: 1.5em; /* Make heart bigger */
+    padding: 0;
+}
+
+.like-btn.liked i { /* When .liked class is added */
+    color: red; /* Liked heart color */
+    font-weight: 900; /* Make it a solid heart (if using Font Awesome solid) */
+}
+.like-btn.liked .fa-regular { /* For Font Awesome 6 regular to solid transition */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* This makes it solid */
+}
+
+
+.cart-summary {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    text-align: right;
+}
+
+.cart-summary h3 {
+    margin: 0 0 15px 0;
+}
+
+.checkout-btn {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+}
+
+.checkout-btn:hover {
+    background-color: #4cae4c;
+}
