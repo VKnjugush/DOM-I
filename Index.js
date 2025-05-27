@@ -40,8 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (heartIcon) { // For Font Awesome icon swap
                 heartIcon.classList.toggle('far', !likeBtn.classList.contains('liked'));
                 heartIcon.classList.toggle('fas', likeBtn.classList.contains('liked'));
-                // For FA6: heartIcon.classList.toggle('fa-regular', !likeBtn.classList.contains('liked'));
-                // For FA6: heartIcon.classList.toggle('fa-solid', likeBtn.classList.contains('liked'));
             }
         }
     });

@@ -22,7 +22,7 @@ body {
     border-bottom: 1px solid #eee;
     padding: 15px 0;
     margin-bottom: 15px;
-    gap: 15px; /* For spacing between flex children */
+    gap: 15px; 
 }
 
 .cart-item:last-child {
@@ -35,7 +35,7 @@ body {
     height: 80px;
     object-fit: cover;
     border-radius: 4px;
-    margin-right: 15px; /* If not using gap */
+    margin-right: 15px;
 }
 
 .item-details {
@@ -67,23 +67,23 @@ body {
 .quantity {
     margin: 0 10px;
     font-weight: bold;
-    min-width: 20px; /* Ensure space for two digits */
+    min-width: 20px; 
     text-align: center;
 }
 
 .item-actions {
     display: flex;
-    flex-direction: column; /* Stack like and delete buttons */
-    align-items: center; /* Center buttons in the column */
-    gap: 5px; /* Space between like and delete */
-    margin-left: 10px; /* Space from item details */
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px; 
+    margin-left: 10px; 
 }
 
 .item-total-price {
-    min-width: 100px; /* Ensure consistent width */
+    min-width: 100px; 
     text-align: right;
     font-weight: bold;
-    margin-left: auto; /* Push to the right */
+    margin-left: auto; 
 }
 
 .btn {
@@ -116,18 +116,18 @@ body {
 .like-btn {
     background: none;
     border: none;
-    color: #aaa; /* Default heart color */
-    font-size: 1.5em; /* Make heart bigger */
+    color: #aaa;
+    font-size: 1.5em; 
     padding: 0;
 }
 
-.like-btn.liked i { /* When .liked class is added */
-    color: red; /* Liked heart color */
-    font-weight: 900; /* Make it a solid heart (if using Font Awesome solid) */
+.like-btn.liked i { 
+    color: red; 
+    font-weight: 900; 
 }
-.like-btn.liked .fa-regular { /* For Font Awesome 6 regular to solid transition */
+.like-btn.liked .fa-regular { 
     font-family: "Font Awesome 6 Free";
-    font-weight: 900; /* This makes it solid */
+    font-weight: 900; 
 }
 
 
